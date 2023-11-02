@@ -10,10 +10,6 @@ INFURA_GOERLI= // Infura api key from https://www.infura.io/
 ETHERSCAN= // etherscan apikey from https://etherscan.io/ (required for smart contract verification)
 INITIAL_MINT= // How many tokens will mint at first phase
 ```
-### read env.txt t
-```shell
-npx hardhat
-```
 ## Try running some of the following tasks:
 
 ```shell
