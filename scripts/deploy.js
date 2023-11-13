@@ -9,7 +9,7 @@ require("dotenv").config()
 
 async function main() {
 
-  const sellon = await hre.ethers.deployContract("Sellon", [process.env.INITIAL_MINT]);
+  const sellon = await hre.ethers.deployContract("Sellon", [process.env.MINT_DESTINATION, process.env.INITIAL_MINT]);
 
   await sellon.waitForDeployment();
 

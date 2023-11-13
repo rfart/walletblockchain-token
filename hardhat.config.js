@@ -7,9 +7,17 @@ module.exports = {
   networks: {
     hardhat: {},
     goerli: {
-      url: `https://goerli.infura.io/v3/${process.env.INFURA_GOERLI}`,
+      url: `https://goerli.infura.io/v3/${process.env.INFURA}`,
       accounts: [process.env.ACCOUNT]
     },
+    polygon: {
+      url: `https://polygon-mainnet.infura.io/v3/${process.env.INFURA}`,
+      accounts: [process.env.ACCOUNT]
+    },
+    mumbai: {
+      url: `https://polygon-mumbai.infura.io/v3/${process.env.INFURA}`,
+      accounts: [process.env.ACCOUNT]
+    }
   },
   solidity: {
     version: "0.8.20",
@@ -21,6 +29,6 @@ module.exports = {
     }
   },
   etherscan: {
-    apiKey: process.env.ETHERSCAN,
+    apiKey: process.env.POLYGONSCAN,
   },
 };
