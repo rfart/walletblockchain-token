@@ -9,11 +9,11 @@ require("dotenv").config()
 
 async function main() {
 
-  const sellon = await hre.ethers.deployContract("Sellon", [process.env.MINT_DESTINATION, process.env.INITIAL_MINT]);
+  const bbt = await hre.ethers.deployContract("BBT", [8, process.env.MINT_TARGET, process.env.INITIAL_MINT]);
 
-  await sellon.waitForDeployment();
+  await bbt.waitForDeployment();
 
-  console.log(`Sellon token deployed with address: ${await sellon.getAddress()}`);
+  console.log(`BBT token deployed with address: ${await bbt.getAddress()}`);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
