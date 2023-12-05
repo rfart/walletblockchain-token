@@ -10,8 +10,8 @@ contract BBT is ERC20, ERC20Burnable, ERC20Permit, Ownable2Step {
     uint8 private immutable _decimal;
 
     constructor(uint8 _dec,address _mintDestination, uint256 _initialMint)
-        ERC20("Baby Boom Coin", "BBT")
-        ERC20Permit("Baby Boom Coin")
+        ERC20("Baby Boom Token", "BBT")
+        ERC20Permit("Baby Boom Token")
         Ownable(msg.sender)
     {
         if(_initialMint != 0) _mint(_mintDestination, _initialMint);
