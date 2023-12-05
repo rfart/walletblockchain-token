@@ -9,7 +9,7 @@ require("dotenv").config()
 
 async function main() {
 
-  const bbt = await hre.ethers.deployContract("BBT", [8, process.env.MINT_TARGET, process.env.INITIAL_MINT]);
+  const bbt = await hre.ethers.deployContract("BBT", [process.env.DECIMAL, process.env.MINT_TARGET, process.env.INITIAL_MINT]);
 
   await bbt.waitForDeployment();
 

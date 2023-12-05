@@ -14,7 +14,11 @@ module.exports = {
       url: `https://sepolia.infura.io/v3/${process.env.INFURA_ID}`,
       accounts: [process.env.ACCOUNT]
     },
-    bsc: {
+    bscTest: {
+      url: process.env.TESTNET,
+      accounts: [process.env.ACCOUNT]
+    },
+    bscMain: {
       url: process.env.MAINNET,
       accounts: [process.env.ACCOUNT]
     }
