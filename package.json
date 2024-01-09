@@ -6,6 +6,7 @@
   "author": "Riyan Firdaus Amerta",
   "license": "MIT",
   "dependencies": {
+    "@nomicfoundation/hardhat-foundry": "^1.1.1",
     "@openzeppelin/contracts": "^5.0.0",
     "dotenv": "^16.3.1",
     "hardhat": "^2.18.3"
