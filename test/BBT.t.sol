@@ -23,4 +23,11 @@ contract BBTTest is Test {
 
         assertEq(bbt.balanceOf(alice), _amount);
     }
+
+    function testApprove(address _spender, uint256 _amount) external {
+        vm.prank(owner);
+        bbt.approve(_spender, _amount);
+
+        assertEq(bbt.allowance(owner, _spender), _amount);
+    }
 }
