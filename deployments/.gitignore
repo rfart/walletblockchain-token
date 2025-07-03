@@ -1,0 +1,9 @@
+# Deployment records
+# These files contain deployment information for different networks
+
+# Keep example file
+!.gitkeep
+!README.md
+
+# But ignore actual deployment records (they may contain sensitive info)
+*-deployment.json
