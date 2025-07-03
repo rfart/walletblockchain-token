@@ -14,6 +14,7 @@ INITIAL_MINT= // How many tokens will mint at first phase
 
 ```shell
 npx hardhat help # Command list
+npx hardhat compile # Compile
 npx hardhat test # Run test
 REPORT_GAS=true npx hardhat test # Gas report test
 npx hardhat run scripts/deploy.js # Deploy token
