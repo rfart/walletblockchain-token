@@ -11,18 +11,18 @@ module.exports = {
       url: `https://goerli.infura.io/v3/${process.env.INFURA_ID}`,
       accounts: [process.env.ACCOUNT]
     },
-    sepolia: {
-      url: process.env.SEPOLIA,
-      accounts: [process.env.ACCOUNT]
-    },
-    bscTest: {
-      url: process.env.TESTNET,
-      accounts: [process.env.ACCOUNT]
-    },
-    bscMain: {
-      url: process.env.MAINNET,
-      accounts: [process.env.ACCOUNT]
-    }
+    // sepolia: {
+    //   url: process.env.SEPOLIA,
+    //   accounts: [process.env.ACCOUNT]
+    // },
+    // bscTest: {
+    //   url: process.env.TESTNET,
+    //   accounts: [process.env.ACCOUNT]
+    // },
+    // bscMain: {
+    //   url: process.env.MAINNET,
+    //   accounts: [process.env.ACCOUNT]
+    // }
     // polygon: {
     //   url: `https://polygon-mainnet.infura.io/v3/${process.env.INFURA}`,
     //   accounts: [process.env.ACCOUNT]
